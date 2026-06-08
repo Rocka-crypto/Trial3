@@ -22,6 +22,18 @@ function App() {
         location="Madrid, Spain"
         bio="Dedicated to creating user-centered design solutions."
       />
+      <ProfileCard
+      name="Amina Osei"
+        role="Data Scientist"
+        location="Accra, Ghana"
+        bio="Turning raw data into meaningful insights for Africa."
+      />
+      <ProfileCard
+        name="Liam Thompson"
+        role="Frontend Developer"
+        location="Toronto, Canada"
+        bio="Building beautiful, accessible web experiences."
+      />
     </div>
   )
 }
