@@ -12,11 +12,82 @@ body {
 
 .app-container {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  padding: 48px 24px;
+  min-height: 100vh;
+}
+
+/* ---- Form ---- */
+.profile-form {
+  background: linear-gradient(145deg, #ffffff15, #ffffff08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 32px;
+  width: 320px;
+  margin-bottom: 20px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.profile-form h2 {
+  color: white;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.profile-form label {
+  display: block;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.85rem;
+  margin-bottom: 4px;
+  margin-top: 14px;
+}
+
+.profile-form input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 0.9rem;
+  margin-top: 4px;
+}
+
+.profile-form input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.char-count {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.75rem;
+  margin-top: 4px;
+}
+
+.submit-btn {
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(90deg, #6366f1, #8b5cf6);
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  transform: scale(1.02);
+}
+
+/* ---- Cards grid ---- */
+.cards-grid {
+  display: flex;
   flex-wrap: wrap;
   gap: 24px;
   justify-content: center;
-  padding: 48px 24px;
-  min-height: 100vh;
 }
 
 .profile-card {
@@ -67,32 +138,22 @@ body {
   display: flex;
   gap: 10px;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
-.profile-card button {
+.profile-btn {
   padding: 9px 22px;
   border-radius: 25px;
   font-size: 0.85rem;
   font-weight: 700;
   cursor: pointer;
   border: none;
+  color: white;
   letter-spacing: 0.5px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.profile-card button:first-child {
-  background: linear-gradient(90deg, #6366f1, #8b5cf6);
-  color: white;
-  box-shadow: 0 4px 15px rgba(99, 102, 241, 0.5);
-}
-
-.profile-card button:last-child {
-  background: linear-gradient(90deg, #f472b6, #ec4899);
-  color: white;
-  box-shadow: 0 4px 15px rgba(244, 114, 182, 0.5);
-}
-
-.profile-card button:hover {
+.profile-btn:hover {
   transform: scale(1.08);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
